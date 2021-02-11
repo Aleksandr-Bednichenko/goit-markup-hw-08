@@ -1,0 +1,64 @@
+.header-contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+  &-item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
+  }
+
+  &-item:hover,
+  &-item:focus {
+    color: $hover-text-color;
+  }
+
+  &-envelope {
+    display: block;
+    width: 14px;
+    height: 10px;
+    fill: $grey-text-color;
+    align-self: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: fill $timing-opacity $timing-function;
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &-smartphone {
+    display: block;
+    width: 10px;
+    height: 16px;
+    fill: $grey-text-color;
+    align-self: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition-property: fill;
+    transition: fill $timing-opacity $timing-function;
+    @media screen and (min-width: 1200px) {
+      height: 16px;
+    }
+  }
+
+  &-icon {
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
