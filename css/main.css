@@ -175,6 +175,16 @@ body {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   .header-contacts {
     display: none;
@@ -424,9 +434,21 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+
 .hero-content {
   display: inline-block;
   width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-content {
+    width: 696px;
+  }
 }
 
 .hero-text {
@@ -494,6 +516,79 @@ body {
   .hero-overley {
     padding-top: 200px;
     height: 600px;
+  }
+}
+
+.advantages {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantages-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
+
+.advantages-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-element {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-element {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-element:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
