@@ -1,0 +1,30 @@
+.footer-contacts {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: start;
+  }
+
+  &-position {
+    margin-bottom: 60px;
+  }
+
+  &-position > &-element:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &-element {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+  }
+
+  &-adress {
+    color: $white-text-color;
+  }
+
+  &-style {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
