@@ -411,6 +411,7 @@ body {
 }
 
 .menu-header {
+  z-index: 1000;
   margin-left: auto;
   margin-right: 15px;
   background-color: transparent;
@@ -426,6 +427,31 @@ body {
 
 .menu-header-cross {
   display: none;
+}
+
+.menu-header.is-open .menu-header-cross {
+  display: block;
+}
+
+.menu-header.is-open .menu-header-icon {
+  display: none;
+}
+
+.menu-header-form {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background-color: #212121;
+}
+
+.menu-header-form.is-open {
+  display: block;
 }
 
 .hero {
