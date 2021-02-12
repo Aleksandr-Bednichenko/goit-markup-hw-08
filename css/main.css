@@ -147,7 +147,13 @@ h4 {
 
 body {
   font-family: Roboto, sans-serif;
-  padding-top: 80px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 .conteiner {
@@ -340,7 +346,7 @@ body {
 .page-header {
   position: fixed;
   width: 100%;
-  z-index: 998;
+  z-index: 997;
   top: 0;
   left: 0;
   color: #212121;
@@ -369,6 +375,8 @@ body {
 }
 
 .logo {
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -411,9 +419,10 @@ body {
 }
 
 .menu-header {
-  z-index: 1000;
-  margin-left: auto;
-  margin-right: 15px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 999;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -435,23 +444,6 @@ body {
 
 .menu-header.is-open .menu-header-icon {
   display: none;
-}
-
-.menu-header-form {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  background-color: #212121;
-}
-
-.menu-header-form.is-open {
-  display: block;
 }
 
 .hero {
@@ -549,6 +541,12 @@ body {
   background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .advantages {
+    width: 480px;
+  }
 }
 
 .advantages-icon {
@@ -689,6 +687,12 @@ body {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .command {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -846,7 +850,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .clients {
-    width: 480px;
+    min-width: 480px;
   }
 }
 
@@ -961,6 +965,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 480px;
+  }
 }
 
 .footer-logo {
@@ -1465,5 +1475,84 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+.backdrop-menu {
+  z-index: 998;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 796px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  background-color: #ffffff;
+}
+
+.backdrop-menu.is-open {
+  display: block;
+}
+
+.backdrop-menu-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.backdrop-menu-nav:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.backdrop-menu-tel {
+  margin-top: 302px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.backdrop-menu-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 64px;
+}
+
+.backdrop-menu-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.backdrop-menu-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.backdrop-menu-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.backdrop-menu-line {
+  display: block;
+  padding: 0;
+  width: 0px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.backdrop-menu-active {
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
