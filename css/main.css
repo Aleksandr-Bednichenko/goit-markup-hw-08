@@ -440,6 +440,8 @@ body {
 
 .menu-header.is-open .menu-header-cross {
   display: block;
+  position: absolute;
+  z-index: 2000;
 }
 
 .menu-header.is-open .menu-header-icon {
@@ -1478,7 +1480,7 @@ body {
 }
 
 .backdrop-menu {
-  z-index: 998;
+  z-index: 9;
   display: none;
   position: fixed;
   left: 0;

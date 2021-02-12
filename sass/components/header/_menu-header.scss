@@ -20,6 +20,8 @@
   }
   &.is-open &-cross {
     display: block;
+    position: absolute;
+    z-index: 2000 ;
   }
   &.is-open &-icon {
     display: none;
