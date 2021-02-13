@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $phone) {
     width: 480px;
   }
 
@@ -45,18 +45,18 @@
   }
 
   &-elements {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
     }
   }
   &-element {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       width: calc((100% - 4 * 30px) / 4);
     }
   }

@@ -1,8 +1,8 @@
 .logo {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 88px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.19;
   }

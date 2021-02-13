@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $phone) {
     width: 480px;
   }
 
@@ -19,7 +19,7 @@
     letter-spacing: 0.03em;
 
     color: $hover-text-color;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 26px;
       line-height: 1.19;
     }
@@ -30,14 +30,12 @@
   }
 
   &-position {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       margin-left: 76px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-left: 0;
     }
-  }
-  &-adress {
   }
 }

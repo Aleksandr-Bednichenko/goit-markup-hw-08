@@ -10,9 +10,15 @@
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: $white-background-color;
+  opacity: 0;
+  transition: opacity $timing-opacity $timing-function;
+  transform: scale(0.4);
+  transition: transform $timing-opacity $timing-function;
 
   &.is-open {
     display: block;
+    opacity: 1;
+    transform: scale(1);
   }
 
   &-nav {
