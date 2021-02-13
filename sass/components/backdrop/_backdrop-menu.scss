@@ -10,13 +10,10 @@
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: $white-background-color;
-  
 
   &.is-open {
     display: block;
   }
-  
-
 
   &-nav {
     font-weight: 500;
@@ -31,19 +28,19 @@
     margin-bottom: 32px;
   }
 
-  &-tel{
+  &-tel {
     margin-top: 302px;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 34px;
-    line-height: 1.17;    
+    line-height: 1.17;
 
     letter-spacing: 0.02em;
 
     color: $hover-text-color;
   }
 
-  &-mail{
+  &-mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -52,40 +49,34 @@
     color: #757575;
 
     margin-bottom: 64px;
-
   }
 
-  &-socials{
+  &-socials {
     display: flex;
   }
 
-  &-social{
-    
+  &-social {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
-    
 
     letter-spacing: 0.02em;
 
-    color: #2196F3;
+    color: #2196f3;
   }
-  &-social:not(:last-child){
+  &-social:not(:last-child) {
     margin-right: 10px;
   }
-  &-line{
+  &-line {
     display: block;
     padding: 0;
     width: 0px;
     height: 22px;
 
-
     border: 1px solid rgba(33, 33, 33, 0.2);
-    }
+  }
 
-    &-active{
-      color: $hover-text-color;
-    }
-  
+  &-active {
+    color: $hover-text-color;
+  }
 }
-
