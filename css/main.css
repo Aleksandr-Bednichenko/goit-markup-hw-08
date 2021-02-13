@@ -799,8 +799,7 @@ body {
 
 .command-photo {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 .command-name {
@@ -1652,8 +1651,7 @@ body {
 
 .project-cards-img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 .project-cards-overley {
