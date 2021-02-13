@@ -150,6 +150,20 @@ body {
   padding-top: 60px;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 @media screen and (min-width: 768px) {
   body {
     padding-top: 80px;
@@ -900,7 +914,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .clients {
-    min-width: 480px;
+    min-width: 450px;
   }
 }
 
@@ -1008,12 +1022,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-}
-
-@media screen and (max-width: 480px) {
-  .footer {
-    width: 480px;
-  }
 }
 
 .footer-logo {
@@ -1532,7 +1540,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 480px;
   height: 796px;
   padding-top: 48px;
   padding-bottom: 48px;

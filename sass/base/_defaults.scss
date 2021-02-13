@@ -18,9 +18,19 @@ h4 {
   padding-left: 0;
 }
 body {
+  @media screen and (max-width: $phone) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $phone) {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   font-family: $main-font-family;
   padding-top: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 80px;
   }
 }

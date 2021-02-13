@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 
   @media screen and (max-width: $phone) {
-    min-width: 480px;
+    min-width: 450px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -31,7 +31,6 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-
   &-position {
     @media screen and (max-width: $phone) {
       width: 210px;
