@@ -622,6 +622,12 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-name {
+    text-align: start;
+  }
+}
+
 .advantages-text {
   font-size: 14px;
   line-height: 1.71;
@@ -637,6 +643,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
+    text-align: start;
   }
 }
 
@@ -1242,6 +1249,12 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-contacts-position {
+    margin-bottom: 0;
+  }
+}
+
 .footer-contacts-position > .footer-contacts-element:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -1606,12 +1619,6 @@ body {
   color: #2196f3;
 }
 
-@media screen and (max-width: 480px) {
-  .project-cards {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .project-cards {
     display: -webkit-box;
@@ -1633,6 +1640,7 @@ body {
 @media screen and (min-width: 1200px) {
   .project-cards-position {
     width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
 }
 
@@ -1648,6 +1656,7 @@ body {
 
 .project-cards-element {
   display: block;
+  border: 1px solid #eeeeee;
 }
 
 .project-cards-element:hover .project-cards-overley,

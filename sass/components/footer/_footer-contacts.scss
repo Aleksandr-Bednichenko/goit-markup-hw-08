@@ -6,6 +6,9 @@
 
   &-position {
     margin-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
+    }
   }
 
   &-position > &-element:not(:last-child) {
