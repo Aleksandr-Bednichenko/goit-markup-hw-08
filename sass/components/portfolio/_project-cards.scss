@@ -1,4 +1,8 @@
 .project-cards {
+  // @media screen and (max-width: $phone) {
+  //   width: 480px;
+  // }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
